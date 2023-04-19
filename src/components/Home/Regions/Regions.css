@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 80vh;
+  overflow: hidden;
 }
 .upper-section {
   height: 100%;
@@ -12,8 +13,8 @@
   position: relative;
   background-image: url(../../../svgs/Road.svg);
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
+  background-size: cover;
+  background-position: bottom right;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,24 +22,71 @@
 
 .Calicut {
   position: absolute;
-  position: absolute;
-  right: 50%;
-  top: 50%;
+  left: 20%;
+  top: 60%;
+  width: 15vw;
+  min-width: 100px;
 }
 
 .Trivandrum {
   position: absolute;
-  position: absolute;
-  right: 20%;
-  top: 35%;
+  right: 25%;
+  top: 40%;
+  width: 12vw;
+  min-width: 90px;
 }
 
 .Kochi {
   position: absolute;
   right: 10%;
-  top: 10%;
+  top: 5%;
+  width: 10vw;
+  min-width: 80px;
 }
+@media all and (max-width: 1000px) {
+  .Calicut {
+    left: 10%;
+  }
 
+  .Trivandrum {
+    right: 35%;
+  }
+
+  .Kochi {
+    right: 20%;
+  }
+}
+@media all and (max-width: 650px) {
+  .Calicut {
+    left: 5%;
+    top: 50%;
+  }
+
+  .Trivandrum {
+    right: 35%;
+    top: 35%;
+  }
+
+  .Kochi {
+    right: 30%;
+  }
+}
+@media all and (max-width: 500px) {
+  .Calicut {
+    left: 0%;
+    top: 40%;
+  }
+
+  .Trivandrum {
+    right: 35%;
+    top: 25%;
+  }
+
+  .Kochi {
+    top: 5%;
+    right: 30%;
+  }
+}
 .RegionsText {
   position: absolute;
   left: 0;

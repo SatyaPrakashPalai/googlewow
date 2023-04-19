@@ -1,189 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 @font-face {
-    font-family: google-sans-regular;
-    src: url('../../../fonts/GoogleSans-Regular-v1.27.ttf');
+  font-family: google-sans-regular;
+  src: url("../../../fonts/GoogleSans-Regular-v1.27.ttf");
 }
 
 .upper-upper-section {
-    display: flex;
-    font-size: 16px;
-    margin-bottom: 1rem;
-    font-weight: 400;
-    line-height: 20.35px;
-    letter-spacing: 0.1rem;
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  line-height: 20.35px;
+  letter-spacing: 0.1rem;
 }
 
 .textG {
-    margin-left: 1rem;
-    line-height: 1.2;
+  margin-left: 1rem;
+  line-height: 1.2;
 }
 
 .upper-section {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
 }
+.upper-section > div:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+}
+/* .upper-section > div > span {
+  max-width: 300px;
+} */
 
 .upper-section-right {
-    margin-top: 3rem;
-    margin-right: 2rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
 }
 
 .upper-section-left {
-    font-family: 'google-sans-regular';
-    font-size: 64px;
-    font-weight: 600;
-    line-height: 100px;
-    letter-spacing: 0.4rem;
-    margin-left: 2rem;
-    margin-top: 5rem;
+  font-family: "google-sans-regular";
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 100px;
+  letter-spacing: 0.4rem;
+  margin-left: 2rem;
+  margin-top: 5rem;
 }
 
 .blue1 {
-    color: #4180EA;
+  color: #4180ea;
 }
 
 .blue {
-    color: #4285F4;
+  color: #4285f4;
 }
 
 .red {
-    color: #DB4437;
+  color: #db4437;
 }
 
 .red1 {
-    color: #E94100;
+  color: #e94100;
 }
 
 .green {
-    color: #109756;
+  color: #109756;
 }
 
 .yellow {
-    color: #F4B400;
+  color: #f4b400;
 }
 
 .kerala {
-    font-family: 'Poppins', 'Google-Sans';
-    color: #00A154;
+  font-family: "Poppins", "Google-Sans";
+  color: #00a154;
 }
 
 .bottom-section {
+  position: absolute;
+  width: 444px;
+  height: 151px;
+  left: 967px;
+  top: 534px;
+}
+
+@media screen and (max-width: 1840px) {
+  .bottom-section {
+    display: flex;
     position: absolute;
     width: 444px;
     height: 151px;
-    left: 967px;
-    top: 534px;
+    left: 477px;
+    top: 590px;
+  }
 }
 
-@media screen and (max-width:1840px) {
-    .bottom-section {
-        display: flex;
-        position: absolute;
-        width: 444px;
-        height: 151px;
-        left: 477px;
-        top: 590px;
-    }
+@media screen and (max-width: 1500px) {
+  .sideBar {
+    display: none;
+  }
+
+  .bottom-section {
+    display: none;
+  }
 }
 
-@media screen and (max-width:1500px) {
-    .sideBar {
-        display: none;
-    }
+@media screen and (max-width: 780px) {
+  .sideBar {
+    display: none;
+  }
 
-    .bottom-section {
-        display: none;
-    }
+  .upper-upper-section {
+    display: none;
+  }
+
+  .bottom-section {
+    display: none;
+    top: 32rem;
+    left: 1.8rem;
+    /* width: 50.56px; */
+    /* height: 33.66px; */
+  }
+
+  .google-developer {
+    font-size: 42px;
+    line-height: 65px;
+    letter-spacing: 0.05em;
+  }
+
+  .student-clubs {
+    font-size: 40px;
+    line-height: 65px;
+    letter-spacing: 0.05em;
+  }
+
+  .kerala {
+    font-size: 32px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+  }
+
+  .robot-image {
+    /* margin-top: 200px; */
+    width: 304.56px;
+    height: 333.66px;
+  }
+
+  .upper-section-left {
+    margin-top: 3rem;
+  }
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width: 600px) {
+  .sideBar {
+    display: none;
+  }
 
-    .sideBar {
-        display: none;
-    }
+  .upper-upper-section {
+    display: none;
+  }
 
-    .upper-upper-section {
-        display: none;
-    }
+  .bottom-section {
+    display: none;
+  }
 
-    .bottom-section {
-        display: none;
-        top: 32rem;
-        left: 1.8rem;
-        /* width: 50.56px; */
-        /* height: 33.66px; */
-    }
+  .google-developer {
+    font-size: 32px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+  }
 
-    .google-developer {
-        font-size: 42px;
-        line-height: 65px;
-        letter-spacing: 0.05em;
-    }
+  .student-clubs {
+    font-size: 32px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+  }
 
-    .student-clubs {
-        font-size: 40px;
-        line-height: 65px;
-        letter-spacing: 0.05em;
-    }
+  .kerala {
+    font-size: 32px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+  }
 
-    .kerala {
-        font-size: 32px;
-        line-height: 45px;
-        letter-spacing: 0.05em;
-    }
+  .robot-image {
+    /* margin-top: 200px; */
+    width: 200px;
+    height: 220px;
+  }
 
-    .robot-image {
-        margin-top: 200px;
-        width: 304.56px;
-        height: 333.66px;
-    }
-
-    .upper-section-left {
-        margin-top: 3rem;
-    }
-}
-
-
-@media screen and (max-width:600px) {
-
-    .sideBar {
-        display: none;
-    }
-
-    .upper-upper-section {
-        display: none;
-    }
-
-    .bottom-section {
-        display: none;
-    }
-
-    .google-developer {
-        font-size: 32px;
-        line-height: 45px;
-        letter-spacing: 0.05em;
-    }
-
-    .student-clubs {
-        font-size: 32px;
-        line-height: 45px;
-        letter-spacing: 0.05em;
-    }
-
-    .kerala {
-        font-size: 32px;
-        line-height: 45px;
-        letter-spacing: 0.05em;
-    }
-
-    .robot-image {
-        margin-top: 200px;
-        width: 200px;
-        height: 220px;
-    }
-
-    .upper-section-left {
-        margin-top: 3rem;
-    }
+  .upper-section-left {
+    margin-top: 3rem;
+  }
 }
